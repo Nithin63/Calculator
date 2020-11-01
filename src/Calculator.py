@@ -39,11 +39,17 @@ def division(a, b):
     return d
 
 
-
 def sqr(a):
     a = int(a)
     c = a * a
     return c
+
+
+def root(a):
+    a = int(a)
+    c = math.sqrt(a)
+    d = round(c, 8)
+    return d
 
 
 class Calculator:
@@ -74,6 +80,10 @@ class Calculator:
 
     def div(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def squareroot(self, a):
+        self.result = root(a)
         return self.result
 
 
