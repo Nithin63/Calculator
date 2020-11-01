@@ -31,6 +31,21 @@ def division(a, b):
     return d
 
 
+def division(a, b):
+    a = float(a)
+    b = float(b)
+    c = b / a
+    d = round(c, 9)
+    return d
+
+
+
+def sqr(a):
+    a = int(a)
+    c = a * a
+    return c
+
+
 class Calculator:
     result = 0
 
@@ -47,6 +62,14 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = sqr(a)
+        return self.result
+
+    def div(self, a, b):
+        self.result = division(a, b)
         return self.result
 
     def div(self, a, b):
